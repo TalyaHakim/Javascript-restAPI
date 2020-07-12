@@ -1,0 +1,104 @@
+.navCss{
+    position: fixed;
+    width: 100%;
+}
+.btnSubmit{
+    border: 1px solid #7d7c8f7a;
+    background-color: #dadbe37d;
+    color: black;
+}
+.logo{
+    background-color: #dadbe37d;
+    border:1px solid #7d7c8f7a;
+    padding: 3px;
+    border-radius: 5px;
+}
+.btnCategory{
+    margin-left: 9px;
+    border:1px solid #7d7c8f7a;
+    background-color: #dadbe37d;
+    color: black;
+}
+#jobsHere{
+    text-align: center;
+}
+.recommenDiv{
+    padding: 2%;
+    text-align: center;
+}
+.recommen{
+    margin-top: 4%;
+    color: black;
+    animation-name: recommendation;
+    animation-duration: 2s;
+}
+.btnUrl{
+    float: right;
+    color: black;
+    border: 1px solid #df0f0f7a;
+    background-color: #a2a4b8c2;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 3px;
+}
+@keyframes recommendation{
+    from{
+        margin-top: 4%;
+    }
+    to{
+        margin-top: 5%;
+    }
+    from{
+        color: black;
+    }
+    to{
+        color: red;
+    }
+}
+.cardJob{
+    background-color: #dadbe37d;
+    border: 1px solid #7d7c8f7a;
+    width: 93%;
+    margin: 17px;
+    border-radius: 15px;
+    padding: 23px;
+    text-align: left;
+    display: inline-block;
+}
+.btnMoor{
+    float: right;
+    border: none;
+    font-size: 11px;
+    color: black;
+}
+@media  only screen and (max-width:600px)
+{
+    .form-inline{
+        display: none;
+    }
+    #location{
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    .navCss:hover .form-inline{
+        display: flex;
+    }
+    .recommen{
+        margin-top: 16%;
+    }
+    @keyframes recommendation{
+        from{
+            margin-top: 16%;
+        }
+        to{
+            margin-top: 16%;
+        }
+        from{
+            color: black;
+        }
+        to{
+            color: red;
+        }
+    }
+    
+}
